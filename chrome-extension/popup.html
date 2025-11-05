@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daayre.ai Legal Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <span class="logo-text">Daayre.ai</span>
+      </div>
+      <button id="themeToggle" class="theme-toggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <button id="openFullApp" class="action-btn primary">
+        <span class="btn-icon">💬</span>
+        Open Full Chat
+      </button>
+      <button id="findLawyers" class="action-btn secondary">
+        <span class="btn-icon">👨‍💼</span>
+        Find Lawyers
+      </button>
+    </div>
+
+    <!-- Quick Chat -->
+    <div class="quick-chat">
+      <div class="chat-header">
+        <h3>Quick Legal Query</h3>
+      </div>
+      
+      <div class="messages" id="messages">
+        <div class="message assistant">
+          <div class="message-avatar">
+            <span>🤖</span>
+          </div>
+          <div class="message-content">
+            <p>Hi! I'm your legal AI assistant. Ask me any question about Indian law.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input 
+          type="text" 
+          id="messageInput" 
+          placeholder="Ask about Indian law..."
+          maxlength="200"
+        >
+        <button id="sendMessage" class="send-btn">
+          <span>➤</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Suggested Questions -->
+    <div class="suggestions">
+      <h4>Quick Questions:</h4>
+      <div class="suggestion-buttons">
+        <button class="suggestion-btn" data-question="What are my rights as a tenant?">
+          Tenant Rights
+        </button>
+        <button class="suggestion-btn" data-question="How to file an FIR?">
+          File FIR
+        </button>
+        <button class="suggestion-btn" data-question="Consumer protection rights?">
+          Consumer Rights
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>⚖️ Legal information only - consult a lawyer for advice</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
