@@ -108,3 +108,26 @@ npm install
 
 # Start the development server
 npm run dev
+
+
+
+
+
+
+legal-ai-chatbot/
+├── src/
+│   ├── components/         # UI components (ChatInterface, LawyerSearch, etc.)
+│   ├── contexts/           # Theme and Location context providers
+│   ├── App.tsx             # Main app routing
+│   ├── main.tsx            # Entry point
+│   └── index.css           # Global styles
+├── convex/
+│   ├── auth.ts             # Authentication logic
+│   ├── chat.ts             # Chat management functions
+│   ├── lawyers.ts          # Lawyer data and schema
+│   ├── schema.ts           # Convex data schema
+│   └── router.ts           # API routing
+├── public/
+├── tailwind.config.js
+├── vite.config.ts
+└── package.json
