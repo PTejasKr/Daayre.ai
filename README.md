@@ -1,133 +1,64 @@
-# ⚖️ Legal AI Chatbot Application
+<div align="center">
 
-> An intelligent, AI-powered web platform that analyzes legal documents, flags hidden or harmful clauses, and connects users with verified lawyers for professional consultation.
+# ⚖️ Daayre.ai
+### Legal Document Intelligence & Reactive Workspace
 
----
+<p align="center">
+  <a href="https://daayre-ai.vercel.app"><img src="https://img.shields.io/badge/Live-Production%20Site-0070F3?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Site" /></a>
+  <img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Convex-Realtime%20DB-FF6F00?style=for-the-badge" alt="Convex" />
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+</p>
 
-## 🧠 Overview
-
-The **Legal AI Chatbot Application** simplifies the process of reading and understanding complex legal documents.  
-It uses **AI-driven clause analysis** to identify risks, summarize terms, and empower users to make confident legal decisions.  
-The platform also includes a **lawyer discovery and booking system**, bridging the gap between automated analysis and expert advice.
-
----
-
-## 🎯 Goals & Objectives
-
-- Help users identify **hidden or risky clauses** in contracts and agreements.
-- Offer **plain-language summaries** of legal documents.
-- Provide access to **licensed lawyers** for 1-on-1 consultations.
-- Maintain **data security** and **confidentiality**.
-- Deliver a **fast, responsive, and accessible** user experience.
+```
+  Real-time legal document discovery, contract parsing, and browser extension companion
+  powered by TypeScript, Vite, Tailwind CSS, and Convex.
+```
 
 ---
 
-## 💡 Key Features
+</div>
 
-| Feature | Description |
-|----------|--------------|
-| **AI Legal Analysis** | Upload or paste contracts; the AI highlights hidden or harmful clauses and provides easy-to-read summaries. |
-| **Interactive Chatbot** | Ask follow-up legal questions and receive real-time responses. |
-| **Lawyer Directory** | Search, filter, and connect with verified lawyers based on expertise, location, and reviews. |
-| **Authentication System** | Secure sign-up, sign-in, and session handling. |
-| **User Dashboard** | Save and revisit document analyses and previous interactions. |
-| **Theme Toggle** | Light/Dark mode for improved accessibility. |
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Live Deployment](#-live-deployment)
+- [Directory Structure](#-directory-structure)
+- [Quick Start](#-quick-start)
 
 ---
 
-## 👥 Target Users
+## 🌟 Overview
 
-- **Individuals** – reviewing contracts, NDAs, or property documents.  
-- **Small Businesses** – analyzing vendor/client agreements.  
-- **Lawyers** – offering paid consultation services on the platform.
+**Daayre.ai** streamlines legal agreement analysis by combining a reactive web workspace with a Chrome extension companion for instant clause inspection.
 
 ---
 
-## 🧩 Tech Stack
+## 🚀 Live Deployment
 
-| Layer | Technology |
-|--------|-------------|
-| **Frontend** | React + TypeScript + Tailwind CSS + Vite |
-| **Backend** | Convex (Serverless real-time backend) |
-| **Authentication** | Convex Auth |
-| **AI Engine** | Pluggable Legal Language Model API |
-| **Deployment** | Vercel (frontend), Convex Cloud (backend) |
+* **Production URL:** [https://daayre-ai.vercel.app](https://daayre-ai.vercel.app)
+* **Hosting:** Vercel Edge Network ($0.00 Free Tier)
 
 ---
 
-## 🔐 Security & Compliance
-
-- All data encrypted **in transit and at rest**.  
-- Strict session and token management via Convex Auth.  
-- No document data shared with third parties without consent.  
-- Follows **GDPR** and best-practice data minimization principles.
-
----
-
-## 📈 Success Metrics
-
-| Metric | Target |
-|---------|--------|
-| Document Analysis Speed | < 5 seconds |
-| Clause Detection Accuracy | ≥ 85% |
-| Monthly Active Users | 10,000+ (Year 1) |
-| User Satisfaction (CSAT) | ≥ 90% positive |
-
----
-
-## 🧭 Product Roadmap
-
-| Phase | Duration | Deliverables |
-|--------|-----------|--------------|
-| **Phase 1** | 4 weeks | Core UI, Authentication, Chatbot integration |
-| **Phase 2** | 3 weeks | Lawyer directory & profile management |
-| **Phase 3** | 4 weeks | Document analysis & clause detection |
-| **Phase 4** | 2 weeks | Beta launch, user testing, optimization |
-
----
-
-## 🚀 Future Enhancements
-
-- 🌍 Multilingual document support  
-- 🗣️ Voice-based AI chatbot  
-- 💳 Payment integration for consultations  
-- 📊 Lawyer analytics dashboard  
-- 🧾 Jurisdiction-specific legal databases
-
----
-
-## ⚙️ Installation (Developer Setup)
+## 📂 Directory Structure
 
 ```bash
-# Clone the repository
-git clone https://github.com/<yourusername>/legal-ai-chatbot.git
-cd legal-ai-chatbot
+Daayre.ai/
+├── src/                   # React + TypeScript application
+├── convex/                # Convex real-time backend functions & schema
+├── chrome-extension/      # Browser extension companion
+└── vite.config.ts         # Vite build configuration
+```
 
-# Install dependencies
+---
+
+## 💻 Quick Start
+
+```bash
+git clone https://github.com/PTejasKr/Daayre.ai.git
+cd Daayre.ai
+
 npm install
-
-# Start the development server
 npm run dev
-
-
-
-
-
-
-legal-ai-chatbot/
-├── src/
-│   ├── components/         # UI components (ChatInterface, LawyerSearch, etc.)
-│   ├── contexts/           # Theme and Location context providers
-│   ├── App.tsx             # Main app routing
-│   ├── main.tsx            # Entry point
-│   └── index.css           # Global styles
-├── convex/
-│   ├── auth.ts             # Authentication logic
-│   ├── chat.ts             # Chat management functions
-│   ├── lawyers.ts          # Lawyer data and schema
-│   ├── schema.ts           # Convex data schema
-│   └── router.ts           # API routing
-├── public/
-├── tailwind.config.js
-├── vite.config.ts
-└── package.json
+```
